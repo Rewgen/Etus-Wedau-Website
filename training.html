@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trainingszeiten – ETuS Wedau 1929 e.V.</title>
+  <meta name="description" content="Alle Trainingszeiten des ETuS Wedau, filterbar nach Abteilung, Wochentag und Altersgruppe.">
+  <meta name="theme-color" content="#18181a">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="training">
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <ol class="crumbs"><li><a href="index.html">Start</a></li><li aria-current="page">Trainingszeiten</li></ol>
+        <h1>Trainingszeiten</h1>
+        <p class="lead">Alle Gruppen aller Abteilungen an einem Ort. Das erste Training ist immer kostenlos.</p>
+        <a class="link" href="https://etus-wedau.de/wp-content/uploads/2026/10/2026-ETuS-Hallenbelegung-Heizung-Winter-2026-2027-3-A3.pdf" target="_blank" rel="noopener"><i data-icon="download"></i> Hallenplan Winter 2026/27 (PDF)</a>
+      </div>
+    </section>
+    <section class="section" id="finder" style="padding-top:32px">
+      <div class="container">
+        <div class="filters">
+          <div style="min-width:220px"><label for="f-dept">Abteilung</label><select id="f-dept" class="select"><option value="alle">Alle Abteilungen</option></select></div>
+          <div><span class="flabel">Tag</span><div class="seg" id="f-day"><button data-v="alle" aria-pressed="true">Alle</button><button data-v="1" aria-pressed="false">Mo</button><button data-v="2" aria-pressed="false">Di</button><button data-v="3" aria-pressed="false">Mi</button><button data-v="4" aria-pressed="false">Do</button><button data-v="5" aria-pressed="false">Fr</button><button data-v="7" aria-pressed="false">So</button></div></div>
+          <div><span class="flabel">Alter</span><div class="seg" id="f-age"><button data-v="alle" aria-pressed="true">Alle</button><button data-v="kinder" aria-pressed="false">Kinder</button><button data-v="jugend" aria-pressed="false">Jugend</button><button data-v="erwachsene" aria-pressed="false">Erwachsene</button><button data-v="senioren" aria-pressed="false">Senioren</button></div></div>
+        </div>
+        <p class="muted small" id="f-count"></p>
+        <div id="f-results"></div>
+        <div class="notice" style="margin-top:20px"><i data-icon="info"></i><p>Bei manchen Gruppen (z. B. Tischtennis, Seniorengymnastik, Segeln) werden die Zeiten individuell abgesprochen. Ruft uns gerne an: <a href="tel:+49203720986">0203 72 09 86</a>.</p></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
